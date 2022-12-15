@@ -1,0 +1,127 @@
+body {
+    font-family: 'Palatino', 'Calibri', sans-serif;
+    margin: 0 auto;
+    background-color: #b8b8b8;
+    color: #dedede;
+    position: relative;
+}
+
+.hero {    
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+.hero img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0 0 20px #201b23, 0 0 20px #201b23, 0 0 20px #201b23 ;
+}
+
+nav li {   
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    text-shadow: none;
+}
+
+nav li::after{
+    content: " |";
+}
+
+nav li:last-child::after {
+    content: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #786484;
+
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.details-container {
+    background-color: #c1b7c6;
+    display: flex;
+    flex-direction: row;
+    border-left: 1px solid #91829a;
+    border-right: 1px solid #91829a;
+    height: auto;
+    width: auto;
+    padding: 0 75px;
+    }
+
+.title { padding-right: 8px;
+    display: flex;
+    justify-content: flex-end;
+    min-width: 225px;
+    background-color: #91829a;
+}
+.details {
+    color: #37303b;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding-left: 25px;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.work {
+    color: #37303b; 
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    padding-left: 25px;
+    width: 100%; 
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #786484;
+    border-radius: 15px;
+    padding: 6px 20px;
+}
+
+.details img {
+    max-width: 200px;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+ p, h3, ul {
+    margin: 0;
+    padding: 0;
+ }
+
+ h1 {
+    font-size: 42px;
+ }
