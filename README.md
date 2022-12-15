@@ -11,7 +11,15 @@ N/A
 
 ## Usage
 
+GitHub repository: https://github.com/Jonochi/professional-portfolio
+
+GitHub Deployed Project Page: https://jonochi.github.io/professional-portfolio/
+
 For students to maintain and send to potential employers and recruiters.
+
+Project screenshot:
+    
+![Module 2 project screenshot](assets/images/screenshot.png)
 
 ## Credits
 
