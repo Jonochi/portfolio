@@ -1,5 +1,9 @@
+* {
+    box-sizing: border-box;
+  }
+
 body {
-    font-family: 'Palatino', 'Calibri', sans-serif;
+    font-family: 'Times New Roman', 'Calibri', sans-serif;
     margin: 0 auto;
     background-color: #b8b8b8;
     color: #dedede;
@@ -21,6 +25,7 @@ body {
 }
 
 .hero-text {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,11 +64,6 @@ section {
 .details-container {
     background-color: #c1b7c6;
     display: flex;
-    flex-direction: row;
-    border-left: 1px solid #91829a;
-    border-right: 1px solid #91829a;
-    height: auto;
-    width: auto;
     padding: 0 75px;
 }
 
@@ -85,6 +85,7 @@ section {
     width: 100%;
     justify-content: space-around;
     margin: 40px 0;
+    padding: 8px 0;
 }
 
 .details img {
@@ -97,7 +98,9 @@ section {
 .button {
     background-color: #786484;
     border-radius: 15px;
-    padding: 6px 20px;
+    padding: 6px 0; 
+    width: 90px;
+    text-align: center;
 }
 /* End about me and contact me sections */
 
@@ -105,60 +108,71 @@ section {
 .work-details {
     color: #37303b; 
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
     width: 100%; 
 }
 .main-project {
-    width: 80%;
-    margin-top: 20px;    
+    margin-top: 20px;
+    flex: 100%;
+    padding: 8px;   
 }
 
 .main-project img {
     width: 100%;
+    min-height: 250px;
+    max-height: 300px;
     border: 2px solid #786484;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 .secondary-project {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row;
-    width: 80%;
+   flex: 50%;
+   padding: 8px 8px 8px 8px;
 }
 
 .secondary-project img {
     width: 100%;
+    height: 200px;
     border: 2px solid #786484;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 .project-info {
     position: absolute;
-    margin: 4px;
+    margin: 2px;
     background-color:   #c1b7c692;
     padding: 8px;
     text-align: center;
-    border: 2px solid #786484;    
+    border-top-left-radius: 18px;
+    border-bottom-right-radius: 18px;
 }
 
 .project-info p {
-    font-size: 14px;
+    font-size: 12px;
 }
 /* end My work section */
 
 
 /* Media breakpoints */
 @media screen and (max-width: 992px) {
-    .secondary-project {
-      flex-wrap: wrap;
-    }
-
+    
     .details {
         flex-wrap: wrap;
+    }
+    .secondary-project img {
+        height: 150px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .secondary-project {
+        flex: 100%;
+    }
+
     .details-container {
         flex-wrap: wrap;
         padding: 0;
@@ -186,13 +200,19 @@ footer {
 }
 
 /* Reset/custom styles */
- p, h3, ul {
+ p, ul {
     margin: 0;
     padding: 0;
  }
 
  h1 {
     font-size: 42px;
+ }
+
+ h3 {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
  }
 
  a {
